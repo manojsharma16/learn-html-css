@@ -5,9 +5,10 @@
     <link href="./styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <nav>
+        <!-- <strong>This is a paragraph</strong> -->
         <a href="/blog.html">Blog</a>
         <a href="#">Challenges</a>
         <a href="#">Flexbox</a>
@@ -16,7 +17,7 @@
       </nav>
     </header>
     <article>
-      <header>
+      <header class="post-header">
         <h2>The Basic Language of the Web: HTML</h2>
         <img
           src="./img/laura-jones.jpg"
@@ -24,7 +25,9 @@
           height="50"
           alt="profile pic"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
         <img src="./img/post-img.jpg" width="500" height="200" alt="coding" />
       </header>
       <p>
@@ -64,7 +67,9 @@
         web. Here are 5 of them:
       </p>
       <ul>
-        <li>To be able to use the fundamental web dev language</li>
+        <li class="first-li">
+          To be able to use the fundamental web dev language
+        </li>
         <li>
           To hand-craft beautiful websites instead of relying on tools like
           Worpress or Wix
@@ -77,16 +82,16 @@
     </article>
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img src="./img/related-1.jpg" alt="codding" width="50" height="50" />
           <a>How to Learn Web Development</a>
-          <p><strong>By Jonas Schmedtmann</strong></p>
+          <p class="related-author"><strong>By Jonas Schmedtmann</strong></p>
         </li>
         <li>
           <img src="./img/related-2.jpg" alt="thunder" width="50" height="50" />
           <a>The Unknown Powers of CSS</a>
-          <p><strong>By Jim Dillon</strong></p>
+          <p class="related-author"><strong>By Jim Dillon</strong></p>
         </li>
         <li>
           <img
@@ -96,10 +101,14 @@
             height="50"
           />
           <a>Why JavaScript is Awesome</a>
-          <p><strong>By Matilda</strong></p>
+          <p class="related-author"><strong>By Matilda</strong></p>
         </li>
       </ul>
     </aside>
-    <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+    <footer>
+      <p id="copyright" class="copyright text">
+        Copyright &copy; 2027 by The Code Magazine.
+      </p>
+    </footer>
   </body>
 </html>
